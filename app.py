@@ -3,7 +3,7 @@ import requests
 from flask_caching import Cache
 
 app = Flask(__name__)
-app.config.from_object('config.Config')
+app.config.from_object('config.BaseConfig')
 cache = Cache(app)
 
 @app.route('/get_location')
