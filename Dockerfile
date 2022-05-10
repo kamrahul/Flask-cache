@@ -9,5 +9,8 @@ COPY requirements.txt /app
 #intstall all dependecies for the flask application 
 RUN pip3 install -r requirements.txt 
 
+# Run unittests
+RUN python -m unittest
+
 # Copy all the files from this dir to image
 COPY . .
