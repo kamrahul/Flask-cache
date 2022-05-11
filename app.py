@@ -41,7 +41,7 @@ def get_address(latitude,longitude):
         if not mock_test :
             location_data = requests.get(url = URL, params = {'format':'jsonv2','lat':latitude,'lon':longitude})
         else:
-            return {'lookup':'API'},200
+            return {'lookup':'CACHE'},202
     except requests.exceptions.RequestException as e:
         # IF issue with request
         return {'error':"API request failed . Please retry"},503 # retry status
