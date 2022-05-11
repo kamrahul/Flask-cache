@@ -18,7 +18,7 @@
 ### python -m unittest  ( Already added as a step in docker file)
 
 ## Unit test report 
-![Architechture Image](./images/unittest.jpg)
+![Architechture Image](./images/unittest.JPG)
 
 # API Cache Implementation Architechture Diagram
 
