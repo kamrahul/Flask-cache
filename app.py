@@ -47,8 +47,8 @@ def get_address(latitude,longitude):
         return {'error':"API request failed . Please retry"},503 # retry status
 
     # Converting byte object to Json
-    location_data = json.loads(location_data.content.decode('utf-8'))
-
+    #location_data = json.loads(location_data.content.decode('utf-8'))
+    location_data = location_data.json()
 
 
     if('error' in location_data):
